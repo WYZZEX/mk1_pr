@@ -6,10 +6,11 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "characters")
-public class MainCharacters {
+public class MK1Character {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String imageUrl;
     private String name;
     private String bio;
     private String[] combo;
