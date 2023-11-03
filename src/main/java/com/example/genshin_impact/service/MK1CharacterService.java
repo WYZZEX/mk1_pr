@@ -5,6 +5,7 @@ import com.example.genshin_impact.repository.MK1CharacterRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service
 public class MK1CharacterService {
@@ -28,6 +29,18 @@ public class MK1CharacterService {
 
     public MK1Character getJohnnyCageDetails(){
         return mk1CharacterRepository.findById(1L).orElse(null);
+    }
+
+    public MK1Character getLiuKangDetails(){
+        return mk1CharacterRepository.findById(1L).orElse(null);
+    }
+
+    public List<MK1Character> getAllCharacters() {
+        return mk1CharacterRepository.findAll();
+    }
+
+    public MK1Character getCharacterById(Long id) {
+        return mk1CharacterRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Character not found"));
     }
 
     // Метод для получения всех персонажей

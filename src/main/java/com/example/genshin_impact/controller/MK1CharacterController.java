@@ -34,4 +34,53 @@ public class MK1CharacterController {
         model.addAttribute("mk1Character", johnnyCage);
         return "johnny-cage-details"; // Имя вашего HTML-шаблона для Scorpion
     }
+    @GetMapping("/characters/kung_lao")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/ashrah")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/rain")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/liu_kang")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/liu_kang")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/liu_kang")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/liu_kang")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+    @GetMapping("/characters/liu_kang")
+    public String showLiuKangDetails(Model model) {
+        MK1Character liuKang = mk1CharacterService.getLiuKangDetails();
+        model.addAttribute("mk1Character", liuKang);
+        return "liu-kang-details"; // Имя вашего HTML-шаблона для Scorpion
+    }
+
 }

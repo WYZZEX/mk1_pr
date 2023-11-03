@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Список персонажей</title>
+</head>
+<body>
+<h1>Список персонажей</h1>
+<div>
+    <img src="/images/JohnnySmall.jpg" alt="Фото персонажа Johnny-Cage">
+    <h2>Character Name: Johnny Cage</h2>
+</div>
+<div>
+    <img src="/images/.jpg" alt="Фото персонажа Sub-Zero">
+    <h2>Character Name: Sub-Zero</h2>
+</div>
+<div>
+    <img src="/images/.jpg" alt="Фото персонажа Scorpion">
+    <h2>Character Name: Scorpion</h2>
+</div>
+<div>
+    <img src="/images/.jpg" alt="Фото персонажа Liu-Kang">
+    <h2>Character Name: Liu-Kang</h2>
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+
+<ul>
+    <li th:each="character : ${characters}">
+        <a th:href="@{/characters/{id}(id=${character.id})}" th:text="${character.name}"></a>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,32 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Все персонажи из Mortal Kombat 1</title>
+    <title>Информация о персонаже</title>
 </head>
 <body>
-<h1>Все персонажи из Mortal Kombat 1</h1>
+<h1>Информация о персонаже</h1>
 
-<div>
-    <#list mk1Characters as character>
-    <h2>Имя персонажа: ${character.name}</h2>
-    <p>Биография: ${character.bio}</p>
-
-    <h3>Комбо-атаки:</h3>
-    <ul>
-        <#list character.combos as combo>
-        <li>${combo}</li>
-    </#list>
-    </ul>
-
-    <h3>Особые приемы:</h3>
-    <ul>
-        <#list character.specialMoves as specialMove>
-        <li>${specialMove}</li>
-    </#list>
-    </ul>
-    <hr>
-</list>
-</div>
+<h2 th:text="${character.name}"></h2>
+<p th:text="${character.bio}"></p>
+<!-- Другая информация о персонаже -->
 </body>
 </html>
