@@ -15,13 +15,9 @@ public class MK1CharacterService {
     public MK1CharacterService(MK1CharacterRepository mk1CharacterRepository) {
         this.mk1CharacterRepository = mk1CharacterRepository;
     }
-    // Метод для получения информации о персонаже Scorpion
     public MK1Character getScorpionDetails() {
-        // Предположим, что у персонажа с именем "Scorpion" id = 1
         return mk1CharacterRepository.findById(1L).orElse(null);
     }
-
-    // Метод для получения информации о персонаже Scorpion
     public MK1Character getSubZeroDetails() {
         return mk1CharacterRepository.findById(1L).orElse(null);
     }
@@ -79,15 +75,14 @@ public class MK1CharacterService {
     public MK1Character getKenshiDetails(){
         return mk1CharacterRepository.findById(1L).orElse(null);
     }
-
+    public MK1Character getLiuKangDetails(){
+        return mk1CharacterRepository.findById(1L).orElse(null);
+    }
     public List<MK1Character> getAllCharacters() {
         return mk1CharacterRepository.findAll();
     }
     public MK1Character getCharacterById(Long id) {
         return mk1CharacterRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Character not found"));
-    }
-    public List<MK1Character> getAllMK1Characters() {
-        return mk1CharacterRepository.findAll();
     }
 }
 

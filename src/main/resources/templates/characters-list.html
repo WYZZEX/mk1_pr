@@ -5,91 +5,140 @@
     <title>Список персонажей</title>
 </head>
 <body>
+<style>
+    body {
+        font-family: 'Arial Black', sans-serif; /* Уникальный шрифт */
+        background-color: #2E8B57; /* Зеленый фон */
+        color: white; /* Цвет текста */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 18px;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #DC143C; /* Цвет фона для заголовков */
+    }
+    tr:nth-child(even) {
+        background-color: #9ACD32; /* Цвет фона для четных строк */
+    }
+    tr:nth-child(odd) {
+        background-color: #3CB371; /* Цвет фона для нечетных строк */
+    }
+</style>
+<table>
 <h1>Список персонажей</h1>
-<div>
-    <img src="/images/JohnnySmall.jpg" alt="Фото персонажа Johnny-Cage">
-    <h2>Character Name: Johnny Cage</h2>
-</div>
-<div>
-    <img src="/images/SubZeroSmall.jpg" alt="Фото персонажа Scorpion">
-    <h2>Character Name: Sub-Zero</h2>
-</div>
-<div>
-    <img src="/images/photo_2023-11-01_20-23-40.jpg" alt="Фото персонажа Scorpion">
-    <h2>Character Name: Scorpion</h2>
-</div>
-<div>
-    <img src="/images/LiuKangSmall.jpg" alt="Фото персонажа Liu-Kang">
-    <h2>Character Name: Liu-Kang</h2>
-</div>
-<div>
-    <img src="/images/TanyaSmall.jpg" alt="Фото персонажа Tanya">
-    <h2>Character Name: Tanya</h2>
-</div>
-<div>
-    <img src="/images/SmokeSmall.jpg" alt="Фото персонажа Smoke">
-    <h2>Character Name: Smoke</h2>
-</div>
-<div>
-    <img src="/images/SindelSmall.jpg" alt="Фото персонажа Sindel">
-    <h2>Character Name: Sindel</h2>
-</div>
-<div>
-    <img src="/images/ShangSmall.jpg" alt="Фото персонажа Shang-Qung">
-    <h2>Character Name: Shang-Qung</h2>
-</div>
-<div>
-    <img src="/images/ReptileSmmall.jpg" alt="Фото персонажа Reptile">
-    <h2>Character Name: Reptile</h2>
-</div>
-<div>
-    <img src="/images/ReikoSmall.jpg" alt="Фото персонажа Reiko">
-    <h2>Character Name: Reiko</h2>
-</div>
-<div>
-    <img src="/images/RainSmall.jpg" alt="Фото персонажа Rain">
-    <h2>Character Name: Rain</h2>
-</div>
-<div>
-    <img src="/images/RaidenSmall.jpg" alt="Фото персонажа Raiden">
-    <h2>Character Name: Raiden</h2>
-</div>
-<div>
-    <img src="/images/NitaraSmall.jpg" alt="Фото персонажа Nitara">
-    <h2>Character Name: Nitara</h2>
-</div>
-<div>
-    <img src="/images/MileenaSmall.jpg" alt="Фото персонажа Mileena">
-    <h2>Character Name: Mileena</h2>
-</div>
-<div>
-    <img src="/images/LiSamall.jpg" alt="Фото персонажа Li-Mei">
-    <h2>Character Name: Li Mei</h2>
-</div>
-<div>
-    <img src="/images/KungSmall.jpg" alt="Фото персонажа Kung-Lao">
-    <h2>Character Name: Kung-Lao</h2>
-</div>
-<div>
-    <img src="/images/KitanaSmall.jpg" alt="Фото персонажа Scorpion">
-    <h2>Character Name: Kitana</h2>
-</div>
-<div>
-    <img src="/images/KenshiSmall.jpg" alt="Фото персонажа Kenshi">
-    <h2>Character Name: Kenshi</h2>
-</div>
-<div>
-    <img src="/images/GerasSmall.jpg" alt="Фото персонажа Geras">
-    <h2>Character Name: Geras</h2>
-</div>
-<div>
-    <img src="/images/BarakaSmall.jpg" alt="Фото персонажа Baraka">
-    <h2>Character Name: Baraka</h2>
-</div>
-<div>
-    <img src="/images/AshrahSmall.jpg" alt="Фото персонажа Ashrah">
-    <h2>Character Name: Ashrah</h2>
-</div>
+    <div>
+        <img src="/images/JohnnySmall.jpg" alt="Фото персонажа Johnny-Cage">
+        <h2>Character Name: Johnny Cage</h2>
+        <a href="http://localhost:8080/characters/johnny_cage">Johnny-Cage</a>
+    </div>
+    <div>
+        <img src="/images/SubZeroSmall.jpg" alt="Фото персонажа Sub-Zero">
+        <h2>Character Name: Sub-Zero</h2>
+        <a href="http://localhost:8080/characters/subzero">Sub-Zero</a>
+    </div>
+    <div>
+        <img src="/images/Scorpion.png" alt="Фото персонажа Scorpion">
+        <h2>Character Name: Scorpion</h2>
+        <a href="http://localhost:8080/characters/scorpion">Scorpion</a>
+    </div>
+    <div>
+        <img src="/images/LiuKangSmall.jpg" alt="Фото персонажа Liu-Kang">
+        <h2>Character Name: Liu-Kang</h2>
+        <a href="http://localhost:8080/characters/liu_kang">Liu-Kang</a>
+    </div>
+    <div>
+        <img src="/images/TanyaSmall.jpg" alt="Фото персонажа Tanya">
+        <h2>Character Name: Tanya</h2>
+        <a href="http://localhost:8080/characters/tanya">Tanya</a>
+    </div>
+    <div>
+        <img src="/images/SmokeSmall.jpg" alt="Фото персонажа Smoke">
+        <h2>Character Name: Smoke</h2>
+        <a href="http://localhost:8080/characters/smoke">Smoke</a>
+    </div>
+    <div>
+        <img src="/images/SindelSmall.jpg" alt="Фото персонажа Sindel">
+        <h2>Character Name: Sindel</h2>
+        <a href="http://localhost:8080/characters/sindel">Sindel</a>
+    </div>
+    <div>
+        <img src="/images/ShangSmall.jpg" alt="Фото персонажа Shang-Qung">
+        <h2>Character Name: Shang-Qung</h2>
+        <a href="http://localhost:8080/characters/shang_qung">Shang-Qung</a>
+    </div>
+    <div>
+        <img src="/images/ReptileSmmall.jpg" alt="Фото персонажа Reptile">
+        <h2>Character Name: Reptile</h2>
+        <a href="http://localhost:8080/characters/reptile">Reptile</a>
+    </div>
+    <div>
+        <img src="/images/ReikoSmall.jpg" alt="Фото персонажа Reiko">
+        <h2>Character Name: Reiko</h2>
+        <a href="http://localhost:8080/characters/reiko">Reiko</a>
+    </div>
+    <div>
+        <img src="/images/RainSmall.jpg" alt="Фото персонажа Rain">
+        <h2>Character Name: Rain</h2>
+        <a href="http://localhost:8080/characters/rain">Rain</a>
+    </div>
+    <div>
+        <img src="/images/RaidenSmall.jpg" alt="Фото персонажа Raiden">
+        <h2>Character Name: Raiden</h2>
+        <a href="http://localhost:8080/characters/raiden">Raiden</a>
+    </div>
+    <div>
+        <img src="/images/NitaraSmall.jpg" alt="Фото персонажа Nitara">
+        <h2>Character Name: Nitara</h2>
+        <a href="http://localhost:8080/characters/nitara">Nitara</a>
+    </div>
+    <div>
+        <img src="/images/MileenaSmall.jpg" alt="Фото персонажа Mileena">
+        <h2>Character Name: Mileena</h2>
+        <a href="http://localhost:8080/characters/mileena">Mileena</a>
+    </div>
+    <div>
+        <img src="/images/LiSamall.jpg" alt="Фото персонажа Li-Mei">
+        <h2>Character Name: Li Mei</h2>
+        <a href="http://localhost:8080/characters/li_mei">Li-Mei</a>
+    </div>
+    <div>
+        <img src="/images/KungSmall.jpg" alt="Фото персонажа Kung-Lao">
+        <h2>Character Name: Kung-Lao</h2>
+        <a href="http://localhost:8080/characters/kung_lao">Kung-Lao</a>
+    </div>
+    <div>
+        <img src="/images/KitanaSmall.jpg" alt="Фото персонажа Kitana">
+        <h2>Character Name: Kitana</h2>
+        <a href="http://localhost:8080/characters/kitana">Kitana</a>
+    </div>
+    <div>
+        <img src="/images/KenshiSmall.jpg" alt="Фото персонажа Kenshi">
+        <h2>Character Name: Kenshi</h2>
+        <a href="http://localhost:8080/characters/kenshi">Kenshi</a>
+    </div>
+    <div>
+        <img src="/images/GerasSmall.jpg" alt="Фото персонажа Geras">
+        <h2>Character Name: Geras</h2>
+        <a href="http://localhost:8080/characters/geras">Geras</a>
+    </div>
+    <div>
+        <img src="/images/BarakaSmall.jpg" alt="Фото персонажа Baraka">
+        <h2>Character Name: Baraka</h2>
+        <a href="http://localhost:8080/characters/baraka">Baraka</a>
+    </div>
+    <div>
+        <img src="/images/AshrahSmall.jpg" alt="Фото персонажа Ashrah">
+        <h2>Character Name: Ashrah</h2>
+        <a href="http://localhost:8080/characters/ashrah">Ashrah</a>
+    </div>
+</table>
 <ul>
     <li th:each="character : ${characters}">
         <a th:href="@{/characters/{id}(id=${character.id})}" th:text="${character.name}"></a>

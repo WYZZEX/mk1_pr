@@ -22,13 +22,6 @@ public class CharactersController {
     public String showCharactersPage(Model model) {
         List<MK1Character> characters = mk1CharacterService.getAllCharacters();
         model.addAttribute("characters", characters);
-        return "characters-list"; // HTML-шаблон для списка персонажей
-    }
-
-    @GetMapping("/characters/{id}")
-    public String showCharacterDetails(@PathVariable Long id, Model model) {
-        MK1Character character = mk1CharacterService.getCharacterById(id);
-        model.addAttribute("character", character);
-        return "character-details"; // HTML-шаблон для информации о персонаже
+        return "characters-list";
     }
 }

@@ -8,7 +8,7 @@ import lombok.Data;
 @Table(name = "characters")
 public class MK1Character {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String imageUrl;
     private String name;
