@@ -65,29 +65,11 @@
 <div class="container">
     <h1>Регистрация</h1>
     <form id="registerForm" action="/register" method="post">
-        <!-- Ваши поля формы могут быть здесь -->
 
         <button type="submit">Зарегистрироваться</button>
     </form>
 
-    <!-- Добавьте следующий код для перехода на страницу выбора или остаться на текущей странице -->
     <p>Уже зарегистрированы? <a href="/choice">Перейти к выбору</a> или <a href="#" id="chooseLater">выбрать позже</a></p>
-
-    <script>
-        document.getElementById('registerForm').addEventListener('submit', function(event) {
-            // Здесь может быть логика проверки учетных данных
-
-            // Перенаправление на страницу выбора после успешной регистрации
-            window.location.href = '/choice';
-
-            event.preventDefault(); // Предотвращаем отправку формы, так как мы делаем редирект через JavaScript
-        });
-
-        document.getElementById('chooseLater').addEventListener('click', function(event) {
-            // Оставить пользователя на текущей странице
-            event.preventDefault();
-        });
-    </script>
 </div>
 </body>
 </html>
